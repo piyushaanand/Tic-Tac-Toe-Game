@@ -9,6 +9,14 @@ const changeturn = () =>{
     return turn === "X"?"0":"X"
 }
 
+function theme(c){
+    let a=document.getElementById("lnk");
+    if(c){
+        a.href="dark.css";
+    }else{
+        a.href="style.css";
+    }
+}
 
 const checkWin = ()=>{
     let boxtext = document.getElementsByClassName('boxtext');
